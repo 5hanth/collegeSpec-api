@@ -19,7 +19,7 @@ defmodule CollegeSpec.Mixfile do
   def application do
     [mod: {CollegeSpec, []},
      applications: [:phoenix, :phoenix_pubsub, :phoenix_html, :cowboy, :logger, :gettext,
-                    :phoenix_ecto, :mariaex, :ex_admin, :basic_auth]]
+                    :phoenix_ecto, :mariaex, :postgrex, :ex_admin, :basic_auth]]
   end
 
   # Specifies which paths to compile per environment.
@@ -34,6 +34,7 @@ defmodule CollegeSpec.Mixfile do
    {:phoenix_pubsub, "~> 1.0"},
    {:phoenix_ecto, "~> 3.0"},
    {:mariaex, ">= 0.0.0"},
+   {:postgrex, ">= 0.0.0"},
    {:phoenix_html, "~> 2.6"},
    {:phoenix_live_reload, "~> 1.0", only: :dev},
    {:faker, "~> 0.5", only: :test},
